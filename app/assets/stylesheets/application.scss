@@ -11,11 +11,16 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+@import "components/footer";
 
 .head {
   text-align: center;
 }
 
 .fa-twitter {
+  color: #1d9ceb;
+}
+
+.fa-heart {
   color: #1d9ceb;
 }
