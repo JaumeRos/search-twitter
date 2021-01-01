@@ -1,16 +1,12 @@
 <div class="container">
-  <div class="row">
-    <h1>Find some info on that twitter profile</h1>
-
-    <p>Input a profile name:</p>
-
-    <form action="/answer" class="form-inline">
-      <div class="input-group input-group-lg">
-        <input type="text" name="question" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" value="Ask" class="btn btn-primary">
-        </span>
-      </div>
+   <div class="row row-cols-1">
+    <div class="col mb-4">
+      <h1 class="m-3">Add a valid Twitter username: </h1>
+      <p>Some ideas: <strong>elonmusk</strong>, <strong>jaumeros6</strong>, <strong>levelsio</strong></p>
+    <form action="/answer" class="form">
+      <input type="text" name="question" class="form-control mb-3">
+      <input type="submit" value= "Find last 3 tweets" class="form-control btn btn-primary">
     </form>
+  </div>
   </div>
 </div>
