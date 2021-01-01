@@ -1,0 +1,24 @@
+
+
+
+
+<div class="container">
+  <div class="row row-cols-1">
+    <div class="col mb-4">
+      <h2 class="m-3">The last 3 tweets made by @<%= @question.capitalize  %> </h2>
+        <% @answer.take(3).each do |answe|  %>
+          <div class="card m-3 p-3">
+            <div class="card-body">
+            <h3 class="card-title"><i class="fab fa-twitter"></i>: </h3>
+            <h2 class="card-text mb-3"> <%= answe.text %></h2>
+            <p class="card-text mb-3"> <%= answe.retweet_count %><i class="fa fa-retweet" aria-hidden="true"></i></p>
+            </div>
+          </div>
+        <% end %>
+
+    </div>
+     <h2><%= link_to "Input new Twitter User", ask_path, class:'btn btn-primary btn-lg form-control mb-4' %></h2>
+  </div>
+</div>
+
+
