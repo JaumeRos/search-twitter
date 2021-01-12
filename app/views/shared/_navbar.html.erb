@@ -12,6 +12,9 @@
         <li class="nav-item active">
           <p class="nav-link"> Welcome! <strong> <%= current_user.username%></strong> </p>
         </li>
+         <li class="nav-item active">
+          <img src=" <%= current_user.image %>  " class="avatar">
+        </li>
         <li class="nav-item active">
           <%= link_to "New Search", ask_path, class: "nav-link" %>
         </li>
